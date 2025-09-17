@@ -39,7 +39,7 @@ def extract_svo2(
     init_params.coordinate_units     = sl.UNIT.MILLIMETER
     init_params.camera_resolution    = sl.RESOLUTION.HD1200
     init_params.coordinate_system    = sl.COORDINATE_SYSTEM.RIGHT_HANDED_Y_UP
-    init_params.camera_fps           = 30
+    init_params.camera_fps           = 15
 
     zed = sl.Camera()
     if zed.open(init_params) != sl.ERROR_CODE.SUCCESS:
